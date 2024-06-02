@@ -31,7 +31,24 @@ Untuk mendapatkan salinan lokal dan menjalankannya, ikuti langkah-langkah sederh
 
 1. **Kloning repositori:**
    ```sh
-   git clone https://github.com/your-username/Kings-Library.git
+   git clone https://github.com/maykoRa/Kings-Library.git
+2. **Buka proyek di Android Studio:**
+   - Buka Android Studio
+   - Klik `Open an existing Android Studio project`
+   - Navigasikan ke repositori yang telah dikloning dan klik `OK`
+3. **Bangun proyek:**
+   - Tunggu hingga build Gradle selesai
+   - Selesaikan setiap dependensi jika diminta
+4. **Jalankan aplikasi:**
+   - Pilih perangkat atau emulator
+   - Klik tombol `Run` (tombol hijau)
 
 ## Tangkapan Layar
+<img src="https://github.com/maykoRa/Kings-Library/assets/113871360/0a351818-ad62-4b15-a1be-20f1544940f9" width="300">
+<img src="https://github.com/maykoRa/Kings-Library/assets/113871360/206e93b2-1c3c-41e0-9625-eeb86ede22f5" width="300">
+<img src="https://github.com/maykoRa/Kings-Library/assets/113871360/e0643c0c-ffc2-4398-9b4d-24180aa1db1f" width="300">
+<img src="https://github.com/maykoRa/Kings-Library/assets/113871360/0413b0b8-976f-4c6c-99da-95527150824d" width="300">
+<img src="https://github.com/maykoRa/Kings-Library/assets/113871360/94834c77-0f50-484d-9bed-c447dfded920" width="300">
+<img src="https://github.com/maykoRa/Kings-Library/assets/113871360/ae65ad72-088e-45d5-80d5-4d498867b7a1" width="300">
+
 
