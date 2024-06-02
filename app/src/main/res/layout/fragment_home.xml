@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/loadHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/warm_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discover Books"
+                    android:layout_marginStart="10dp"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/deep_teal"/>
+
+            </Toolbar>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginHorizontal="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Filter by Publisher"
+                            android:textStyle="bold"
+                            android:textSize="24sp"/>
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="5dp"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/doubleday"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp">
+
+                                    <TextView
+                                        android:id="@+id/doubleday_text"
+                                        android:padding="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Doubleday"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/bright_orange"
+                                        android:textSize="15sp"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/signet_books"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp">
+
+                                    <TextView
+                                        android:id="@+id/signet_books_text"
+                                        android:padding="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Signet Books"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/bright_orange"
+                                        android:textSize="15sp"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/viking_press"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp">
+
+                                    <TextView
+                                        android:id="@+id/viking_press_text"
+                                        android:padding="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Viking Press"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/bright_orange"
+                                        android:textSize="15sp"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/grant"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp">
+
+                                    <TextView
+                                        android:id="@+id/grant_text"
+                                        android:padding="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Grant"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/bright_orange"
+                                        android:textSize="15sp"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/viking"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp">
+
+                                    <TextView
+                                        android:id="@+id/viking_text"
+                                        android:padding="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Viking"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/bright_orange"
+                                        android:textSize="15sp"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/land_of_enchantment"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp">
+
+                                    <TextView
+                                        android:id="@+id/land_of_enchantment_text"
+                                        android:padding="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Land of Enchantment"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/bright_orange"
+                                        android:textSize="15sp"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/philtrum_press"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp">
+
+                                    <TextView
+                                        android:id="@+id/philtrum_press_text"
+                                        android:padding="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Philtrum Press (1984)Viking (1987)"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/bright_orange"
+                                        android:textSize="15sp"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/nal"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp">
+
+                                    <TextView
+                                        android:id="@+id/nal_text"
+                                        android:padding="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="NAL"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/bright_orange"
+                                        android:textSize="15sp"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/putnam"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp">
+
+                                    <TextView
+                                        android:id="@+id/putnam_text"
+                                        android:padding="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Putnam"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/bright_orange"
+                                        android:textSize="15sp"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/dutton"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp">
+
+                                    <TextView
+                                        android:id="@+id/dutton_text"
+                                        android:padding="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Dutton"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/bright_orange"
+                                        android:textSize="15sp"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/scribner"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp">
+
+                                    <TextView
+                                        android:id="@+id/scribner_text"
+                                        android:padding="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Scribner"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/bright_orange"
+                                        android:textSize="15sp"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/random_house"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp">
+
+                                    <TextView
+                                        android:id="@+id/random_house_text"
+                                        android:padding="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Random House"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/bright_orange"
+                                        android:textSize="15sp"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/hard_case_crime"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp">
+
+                                    <TextView
+                                        android:id="@+id/hard_case_crime_text"
+                                        android:padding="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Hard Case Crime"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/bright_orange"
+                                        android:textSize="15sp"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cemetary_dance_publications"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="5dp">
+
+                                    <TextView
+                                        android:id="@+id/cemetary_dance_publications_text"
+                                        android:padding="8dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Cemetary Dance Publications"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/bright_orange"
+                                        android:textSize="15sp"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_books"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                        app:spanCount="2"
+                        tools:itemCount="6"
+                        tools:listitem="@layout/layout_book"/>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
