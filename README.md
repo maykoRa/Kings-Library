@@ -31,4 +31,7 @@ Untuk mendapatkan salinan lokal dan menjalankannya, ikuti langkah-langkah sederh
 
 1. **Kloning repositori:**
    ```sh
-   git clone https://github.com/your-username/mobile-book-app.git
+   git clone https://github.com/your-username/Kings-Library.git
+
+## Tangkapan Layar
+
